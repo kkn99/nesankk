@@ -29,13 +29,13 @@ class DarkVeil {
     const waves = [
       { color: 'rgba(165,134,12,0.4)', amplitude: 400, speed: 0.0025, freq: 0.503 },
       { color: 'rgba(247, 179, 9, 0.3)', amplitude: 170, speed: 0.0018, freq: 0.0823 },
-      { color: 'rgba(207, 241, 9, 0.2)', amplitude: 110, speed: 0.0033, freq: 0.07  }
+      { color: 'rgba(207, 241, 9, 0.2)', amplitude: 110, speed: 0.0033, freq: 0.07 }
     ];
-//    const waves = [
-//   { color: 'rgba(255, 190, 30, 0.4)', amplitude: 400, speed: 0.0025, freq: 0.503 },
-//   { color: '#a5860c', amplitude: 170, speed: 0.0018, freq: 0.0823 },
-//   { color: 'rgba(29, 28, 26, 0.2)', amplitude: 110, speed: 0.0033, freq: 0.07 }
-// ];
+    //    const waves = [
+    //   { color: 'rgba(255, 190, 30, 0.4)', amplitude: 400, speed: 0.0025, freq: 0.503 },
+    //   { color: '#a5860c', amplitude: 170, speed: 0.0018, freq: 0.0823 },
+    //   { color: 'rgba(29, 28, 26, 0.2)', amplitude: 110, speed: 0.0033, freq: 0.07 }
+    // ];
     waves.forEach((wave, i) => {
       ctx.beginPath();
       for (let x = 0; x <= this.width; x += 10) {

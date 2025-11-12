@@ -33,19 +33,19 @@ ctaBtn.addEventListener('click', () => {
 
 // contactForm.addEventListener('submit', (e) => {
 //     e.preventDefault();
-    
+
 //     const formData = new FormData(contactForm);
 //     const name = contactForm.children[0].value;
 //     const email = contactForm.children[1].value;
 //     const message = contactForm.children[2].value;
-    
+
 //     // Simulate form submission
 //     if (name && email && message) {
 //         formMessage.textContent = '✓ Message sent successfully! Thank you for contacting us.';
 //         formMessage.classList.add('success');
 //         formMessage.classList.remove('error');
 //         contactForm.reset();
-        
+
 //         setTimeout(() => {
 //             formMessage.textContent = '';
 //             formMessage.classList.remove('success');
@@ -124,7 +124,7 @@ console.log('✓ App initialized successfully!');
 // }, 20);
 
 // Skills slider population and linear scrolling
-;(function(){
+; (function () {
     // images to show in skills slider (local first)
     const skillsImgs = [
         './images/html.svg',
@@ -135,9 +135,9 @@ console.log('✓ App initialized successfully!');
         './images/github.svg'
     ];
 
-    $(function(){
+    $(function () {
         const $track = $('.skills-slider .track');
-        if(!$track.length) {
+        if (!$track.length) {
             console.log('Skills slider not found');
             return;
         }
@@ -163,11 +163,11 @@ console.log('✓ App initialized successfully!');
         const $imgs = $track.find('img');
         console.log('Total images in track: ' + $imgs.length);
 
-        $imgs.each(function(){
+        $imgs.each(function () {
             $(this).on('load error', () => {
                 loaded++;
                 console.log('Image loaded/errored: ' + loaded + '/' + $imgs.length);
-                if(loaded >= $imgs.length){
+                if (loaded >= $imgs.length) {
                     // start scrolling
                     console.log('Starting scroll animation');
                     $track.addClass('scrolling');
@@ -176,10 +176,10 @@ console.log('✓ App initialized successfully!');
         });
 
         // fallback: start after 1.5s if load events don't fire
-        setTimeout(()=>{ 
-            if(!$track.hasClass('scrolling')){
+        setTimeout(() => {
+            if (!$track.hasClass('scrolling')) {
                 console.log('Timeout: starting scroll via fallback');
-                $track.addClass('scrolling'); 
+                $track.addClass('scrolling');
             }
         }, 1500);
     });

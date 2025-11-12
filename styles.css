@@ -58,17 +58,20 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     cursor: pointer;
+
     figure {
         display: inline-block;
         margin-left: 0.5rem;
         vertical-align: middle;
         height: 50px;
+
         img {
             height: 100%;
             width: auto;
             src: url('nesankk/images/logo.svg');
         }
     }
+
     &:hover {
         color: var(--secondary-color);
     }
@@ -184,13 +187,16 @@ main {
     0% {
         background-position: 0% 0%;
     }
+
     50% {
         background-position: 100% 100%;
     }
+
     100% {
         background-position: 0% 0%;
     }
 }
+
 .hero-content h1 {
     font-size: 100px;
     margin-bottom: 1rem;
@@ -251,10 +257,12 @@ main {
 
 .section p {
     color: var(--text-color);
-.hero-content {
-    position: relative;
-    z-index: 2;
-}
+
+    .hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
     line-height: 1.8;
     font-size: 24px;
 }
@@ -273,78 +281,89 @@ main {
 }
 
 /* Skills slider - horizontal linear scrolling */
-.skills-slider{
+.skills-slider {
     width: 100%;
     overflow: hidden;
     margin-top: 100px;
 }
 
-.skills-slider .track{
+.skills-slider .track {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.skills-slider .track img{
+.skills-slider .track img {
     width: 140px;
     height: 100px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
     margin: 0 40px;
 }
 
 @keyframes scroll-left {
-    0%{ transform: translateX(0); }
-    100%{ transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
-.skills-slider .track.scrolling{
+.skills-slider .track.scrolling {
     animation: scroll-left linear infinite;
     animation-duration: 40s;
 }
 
-@media (max-width: 768px){
-    .skills-slider .track img{ width: 100px; height: 70px; }
-    .skills-slider .track.scrolling{ animation-duration: 20s; }
+@media (max-width: 768px) {
+    .skills-slider .track img {
+        width: 100px;
+        height: 70px;
+    }
+
+    .skills-slider .track.scrolling {
+        animation-duration: 20s;
+    }
 }
 
 /* Contact Cards */
 .cards {
-  margin-bottom: 2rem;
-  display: flex;
+    margin-bottom: 2rem;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  text-align: center;
-  transition: all 0.3s ease;
-  align-items: center;
-  margin-bottom: 20px;
-  width: 450px;
-  display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 450px;
+    display: flex;
 
-  > div {
-    flex-grow: 1;
-  }
+    >div {
+        flex-grow: 1;
+    }
 }
 
 .card:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px var(--secondary-color);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px var(--secondary-color);
 }
 
 .card a {
-  color: #fff;
-  text-decoration: none;
-  word-break: break-word;
-  transition: color 0.3s ease;
+    color: #fff;
+    text-decoration: none;
+    word-break: break-word;
+    transition: color 0.3s ease;
 }
 
 .card .context {
@@ -352,24 +371,24 @@ main {
 }
 
 /* Card Icons */
-.card i{
-  font-size: 24px;
-  color: var(--secondary-color);
-  display: block;
-  padding: 13px 17px;
-  background-color: rgba(97, 97, 97, .25);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px 0 0 10px;
+.card i {
+    font-size: 24px;
+    color: var(--secondary-color);
+    display: block;
+    padding: 13px 17px;
+    background-color: rgba(97, 97, 97, .25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px 0 0 10px;
 }
 
-.card .wa{
-  font-size: 24px;
-  color: #25d366;
-  display: block;
-  padding: 13px 17px;
-  background-color: rgba(97, 97, 97, .25);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 0 10px 10px 0;
+.card .wa {
+    font-size: 24px;
+    color: #25d366;
+    display: block;
+    padding: 13px 17px;
+    background-color: rgba(97, 97, 97, .25);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 10px 10px 0;
 }
 
 /* Footer */
@@ -420,7 +439,14 @@ footer p {
 
 /* Responsive / Mobile adjustments */
 @media (max-width: 768px) {
+
     /* Layout containers */
+    .navbar {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
     .nav-container {
         padding: 0.75rem 1rem;
     }
@@ -433,7 +459,8 @@ footer p {
     /* Sections */
     .section {
         padding: 2rem 1rem;
-        height: auto; /* avoid forcing tall viewports */
+        height: auto;
+        /* avoid forcing tall viewports */
     }
 
     .section h2 {
@@ -445,7 +472,9 @@ footer p {
         padding: 4rem 1rem;
         min-height: 50vh;
         height: auto;
-        background-attachment: scroll; /* prevent fixed background issues on mobile */
+        top: 0;
+        background-attachment: scroll;
+        /* prevent fixed background issues on mobile */
     }
 
     .hero-content h1 {
@@ -454,6 +483,10 @@ footer p {
 
     .hero-content p {
         font-size: 1rem;
+    }
+
+    .cta-btn {
+        margin-top: 20px;
     }
 
     /* About image – reset offsets for mobile */
@@ -470,23 +503,25 @@ footer p {
     }
 
     /* Skills slider adjustments */
-    .skills-slider{
+    .skills-slider {
         margin-top: 1rem;
         padding: 0.75rem 0;
         border-radius: 8px;
     }
 
-    .skills-slider .track{
+    .skills-slider .track {
         min-height: 90px;
     }
 
-    .skills-slider .track img{ 
-        width: 100px; 
-        height: 70px; 
+    .skills-slider .track img {
+        width: 100px;
+        height: 70px;
         margin: 0 12px;
     }
 
-    .skills-slider .track.scrolling{ animation-duration: 20s; }
+    .skills-slider .track.scrolling {
+        animation-duration: 20s;
+    }
 
     /* Contact cards */
     .cards {
@@ -501,15 +536,17 @@ footer p {
         margin-bottom: 12px;
     }
 
-    .card > div { padding: 0.5rem 0.75rem; }
+    .card>div {
+        padding: 0.5rem 0.75rem;
+    }
 
-    .card i{
+    .card i {
         padding: 10px;
         font-size: 20px;
         border-radius: 8px 0 0 8px;
     }
 
-    .card .wa{
+    .card .wa {
         padding: 10px;
         font-size: 20px;
         border-radius: 0 8px 8px 0;
@@ -523,6 +560,9 @@ footer p {
     }
 
     /* Contact form (if present) */
-    .contact-form { max-width: 100%; margin: 1rem 0; }
+    .contact-form {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
 
 }
