@@ -1,0 +1,22 @@
+{
+  "name": "my-website",
+  "version": "1.0.0",
+  "description": "A modern, responsive website built with vanilla HTML, CSS, and JavaScript",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx live-server",
+    "dev": "npx live-server --port=3000"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "responsive",
+    "website"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ogl": "^1.0.11"
+  }
+}

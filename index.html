@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesan Front End Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="DarkVeil.css">
+<script src="DarkVeil.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo"><a href="#home" class="nav-link">
+                        <figure>
+                            <img src="/images/logo.svg" alt="Logo" />
+                        </figure>
+                    </a></div>
+                <button class="nav-toggle" id="navToggle">☰</button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <canvas id="darkVeil" class="darkveil-canvas" aria-hidden="true"></canvas>
+            <div class="hero-content">
+                <h1>Hi, I'm <span style="color: rgb(173, 6, 6);">N</span>esan</h1>
+                <p>I’m a Front-End Developer passionate about creating beautiful, responsive, and accessible web
+                    experiences.</p>
+                <button class="cta-btn" id="ctaBtn">Get Started</button>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I’m Nesan, a Front-End Developer based in India.</p>
+                <p>I love crafting clean, user-focused interfaces and writing code that brings ideas to life.</p>
+                <p>I started my journey in web development during college, and since then, I’ve worked on projects
+                    involving modern frameworks like React, Next.js, and Tailwind CSS.</p>
+                <p>When I’m not coding, I enjoy exploring new UI trends, reading about design systems, and improving
+                    accessibility for all users. My goal is to build intuitive and performant web applications that make a real impact.</p>
+            </div>
+        </section>
+        <figure>
+            <img class="about-image" src="/images/hand-touch.webp" alt="Hand touching Image" />
+        </figure>
+
+        <section id="skills" class="section section-overlap">
+            <div class="container">
+                <h2>Skills</h2>
+                <p> I specialize in building responsive, user-friendly web interfaces using HTML, CSS, and JavaScript. My main focus is on React.js and modern front-end tools like Redux, Next.js, and Tailwind CSS.</p>
+                <p>I’m experienced with version control using Git and GitHub, working with REST APIs, and ensuring accessibility across devices. I also have a solid understanding of UI/UX design principles and enjoy bringing creative designs to life with clean, maintainable code.</p>
+                 <br>
+                <br>
+                <p><span style="color: #a5860c;">Skills </span>: Html5, CSS3, JavaScript, React, Sass, Bootstrap, Github, Wordpress</p>
+                <div class="skills-slider" aria-hidden="false">
+                    <div class="track"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="cards">
+                    <div class="card">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <a class="context" href="tel:+919442767709">+91 9442767709</a>
+                        </div>
+                        <a target="_blank" rel="noopener" href="https://wa.me/+919442767709?text=Hi%20Nesan"
+                            class="fas fa-brands fa-whatsapp wa"></a>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <a class="context" rel="noopener" href="mailTo:kkn50070@gmail.com">kkn50070@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="context">India</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" rel="noopener" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="tel:+919442767709" title="Call"><i class="fas fa-phone"></i></a>
+                <a href="mailto:kkn50070@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2025 My Website. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="DarkVeil.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

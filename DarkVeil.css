@@ -1,0 +1,48 @@
+.darkveil-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 1;
+  pointer-events: none;
+  background: #000;
+  overflow: hidden;
+}
+
+/* Optional: add gentle motion background gradient overlay */
+.darkveil-canvas::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 25% 40%, rgba(165, 134, 12, 0.4) 0%, transparent 50%),
+    radial-gradient(circle at 75% 60%, rgba(218, 165, 32, 0.35) 0%, transparent 50%),
+    radial-gradient(circle at 50% 0%, rgba(255, 200, 50, 0.3) 0%, transparent 50%);
+  background-size: 200% 200%;
+  animation: gold-gradient-shift 15s ease infinite;
+  filter: blur(50px);
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.darkveil-canvas::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.25) 30%,
+      rgba(0, 0, 0, 0.6) 70%,
+      rgba(0, 0, 0, 0.95) 100%);
+  z-index: 3;
+  pointer-events: none;
+}
+
+@keyframes gold-gradient-shift {
+  0% { background-position: 0% 0%; }
+  25% { background-position: 100% 0%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
+}
